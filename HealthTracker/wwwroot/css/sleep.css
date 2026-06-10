@@ -29,4 +29,7 @@
     color: #485465;
     letter-spacing: -0.08px;
     text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 4px;
 }
