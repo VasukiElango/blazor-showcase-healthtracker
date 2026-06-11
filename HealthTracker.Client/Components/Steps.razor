@@ -80,7 +80,7 @@
     {
     <div class="pieHeader">@DayText</div>
     <div style="text-align: center">
-        <SfAccumulationChart Background="transparent" @ref="@StepPie" Height="330px" Width="320px" ID="PieChart">
+        <SfAccumulationChart Background="transparent" @ref="@StepPie" Height="330px" Width="320px" ID="PieChart" EnableBorderOnMouseMove="false">
             <AccumulationChartSeriesCollection>
                 <AccumulationChartSeries StartAngle="180" EndAngle="180" Radius="100%" InnerRadius="86%" DataSource="@StepsStepData" XName="X" YName="Y" Palettes="@StepPalette"></AccumulationChartSeries>
             </AccumulationChartSeriesCollection>
@@ -94,7 +94,7 @@
                 </AccumulationChartAnnotation>
                 <AccumulationChartAnnotation Region="Regions.Chart" X="50%" Y="50%">
                     <ContentTemplate>
-                        <SfAccumulationChart Background="transparent" @ref="@ExerPie" Height="330px" Width="330px">
+                        <SfAccumulationChart Background="transparent" @ref="@ExerPie" Height="330px" Width="330px" EnableBorderOnMouseMove="false">
                             <AccumulationChartBorder Color="transparent"></AccumulationChartBorder>
                             <AccumulationChartSeriesCollection>
                                 <AccumulationChartSeries StartAngle="180" EndAngle="180" Radius="80%" InnerRadius="82.5%" DataSource="@ExerData" XName="X" YName="Y" Palettes="@ExerPalette"></AccumulationChartSeries>
@@ -105,7 +105,7 @@
                 </AccumulationChartAnnotation>
                 <AccumulationChartAnnotation Region="Regions.Chart" X="50%" Y="50%">
                     <ContentTemplate>
-                        <SfAccumulationChart Background="transparent" @ref="@HourPie" Height="330px" Width="330px">
+                        <SfAccumulationChart Background="transparent" @ref="@HourPie" Height="330px" Width="330px" EnableBorderOnMouseMove="false">
                             <AccumulationChartSeriesCollection>
                                 <AccumulationChartSeries StartAngle="180" EndAngle="180" Radius="60%" InnerRadius="75%" DataSource="@HourData" XName="X" YName="Y" Palettes="@HourPalette"></AccumulationChartSeries>
                             </AccumulationChartSeriesCollection>

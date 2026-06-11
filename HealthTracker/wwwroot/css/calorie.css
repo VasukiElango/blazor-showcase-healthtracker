@@ -259,3 +259,9 @@
     margin-top: -10%;
     margin-left: -13%
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+    .center-annotation {
+        transform: translateY(15px);
+    }
+}
